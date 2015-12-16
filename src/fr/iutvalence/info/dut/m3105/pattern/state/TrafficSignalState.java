@@ -5,28 +5,28 @@ public abstract class TrafficSignalState
 {
 	protected final TrafficSignalContext context;
 	protected int durationInSeconds;
-	private final TrafficSignalStateName name;
+	private final TSColor name;
 	
-	public TrafficSignalState(TrafficSignalContext context, int durationInSeconds, TrafficSignalStateName name)
+	public TrafficSignalState(TrafficSignalContext context, int durationInSeconds, TSColor orange)
 	{
 		super();
 		this.context = context;
 		this.durationInSeconds = durationInSeconds;
-		this.name = name;
+		this.name = orange;
 	}
 
 	public void buttonPressed() 
 	{
-		System.out.println("button pressed!");
+		//System.out.println("button pressed!");
 	}
 
 	public void secondEllapsed() 
 	{
 		this.durationInSeconds--;
-		System.out.println(this.durationInSeconds);
+		//System.out.println(this.durationInSeconds);
 	}
 
-	public TrafficSignalStateName getName()
+	public TSColor getName()
 	{
 		return this.name;
 	}

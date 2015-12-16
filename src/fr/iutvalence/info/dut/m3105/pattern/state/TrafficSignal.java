@@ -8,7 +8,7 @@ public class TrafficSignal extends Thread implements TrafficSignalContext, Traff
 	@Override
 	public void setTrafficSignalState(TrafficSignalState state)
 	{
-		System.out.println("Traffic signal state is "+state.getName());
+		//System.out.println("Traffic signal state is "+state.getName());
 		this.state = state;		
 	}
 
