@@ -16,4 +16,4 @@ public class TSConsoleDisplay implements TSObserver {
 
 
 	
-}
+} 
